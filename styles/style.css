@@ -96,6 +96,12 @@ body {
   margin: 0 0.5rem;
 }
 
+.center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media screen and (min-width: 768px) {
   .product-card {
     flex-direction: row;
@@ -106,5 +112,11 @@ body {
   }
   .product-details {
     width: 50%;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
