@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  max-width: 27rem;
+  max-width: 35rem;
   border-radius: 0.5rem;
 }
 
@@ -41,7 +41,7 @@ body {
 .product-category {
   text-transform: uppercase;
   letter-spacing: 6px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
 .product-name {
@@ -54,7 +54,7 @@ body {
 
 .product-description {
   margin-bottom: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
 }
 
 .price-tag-discount {
@@ -108,7 +108,7 @@ body {
     flex-direction: row;
   }
   .product-image {
-    width: 50%;
+    width: calc(50% + 3rem);
     border-radius: 0.5rem 0 0 0.5rem;
   }
   .product-details {
