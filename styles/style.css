@@ -2,6 +2,10 @@
 
 :root {
   --color-background: hsl(30, 38%, 92%);
+  --color-primary: hsl(158, 36%, 37%);
+  --color-primary-dark: hsl(158, 36%, 20%);
+  --color-text: hsl(228, 12%, 48%);
+  --color-text-title: hsl( 212, 21%, 14%);
 }
 
 body {
@@ -9,5 +13,98 @@ body {
   font-size: 14px;
   background-color: var(--color-background);
   margin: 0;
-  padding: 0;
+  padding: 1rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 35rem;
+  border-radius: 0.5rem;
+}
+
+.product-image {
+  background-image: url('/images/image-product-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 18rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-details {
+  padding: 1.5rem;
+  color: var(--color-text);
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: var(--color-text-title);
+}
+
+.product-description {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.price-tag-discount {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.price-tag-discount .price-sale {
+  font-size: 2rem;
+  font-family: 'Fraunces', sans-serif;
+  color: var(--color-primary);
+  margin-right: 1rem;
+}
+
+.price-tag-discount .price-actual {
+  text-decoration: line-through;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  width: 100%;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-icon {
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    flex-direction: row;
+  }
+  .product-image {
+    width: 50%;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .product-details {
+    width: 50%;
+  }
 }
